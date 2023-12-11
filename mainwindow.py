@@ -15,9 +15,12 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.pushButton.clicked.connect(self.pressButton)
+        self.ui.actionNew.triggered.connect(self.pressButton)
 
     def pressButton(self):
         self.ui.pushButton.setText("Foi Clicado")
+
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

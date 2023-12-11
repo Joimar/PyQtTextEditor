@@ -41,10 +41,16 @@
     <property name="title">
      <string>File</string>
     </property>
+    <addaction name="actionNew"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
